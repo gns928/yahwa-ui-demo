@@ -1,0 +1,152 @@
+/* November 8 working revision — scoped to Design 1. */
+#daily-grid.nov-single-deck{display:flex!important;gap:16px!important;overflow-x:auto!important;overflow-y:hidden!important;scroll-snap-type:x mandatory;padding:0!important;align-items:stretch!important;scrollbar-width:none;width:100%;position:relative}
+#daily-grid.nov-single-deck .daily-card{flex:0 0 100%!important;width:100%!important;min-width:0!important;height:480px!important;min-height:480px!important;max-height:480px!important;scroll-snap-align:start;position:relative;overflow:hidden;border-radius:24px!important;box-sizing:border-box}
+#daily-grid.nov-single-deck .match-sheet-thumb{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;aspect-ratio:auto!important}
+#daily-grid.nov-single-deck .match-sheet-thumb img{height:100%;width:100%;object-fit:cover}
+#daily-grid.nov-single-deck .nov-open-copy{position:absolute!important;bottom:0!important;left:0;right:0;padding:64px 22px 24px!important;background:linear-gradient(transparent,rgba(27,43,49,.85));color:white!important;z-index:2}
+#daily-grid.nov-single-deck .nov-open-copy p,#daily-grid.nov-single-deck .nov-open-copy strong,#daily-grid.nov-single-deck .nov-open-copy span{color:inherit}
+.nov-person-title{display:flex;align-items:center;gap:8px;min-height:32px}.nov-person-title strong{font-size:25px!important}.nov-open-copy p{margin:7px 0!important;font-size:14px!important;line-height:1.5!important}.nov-job{font-weight:600}.nov-tags{display:flex;flex-wrap:wrap;gap:6px 10px;margin-top:10px;font-size:12px;line-height:1.5}
+#daily-grid.nov-single-deck .card-scene-preview{bottom:22px!important;left:22px!important;right:22px!important}.nov-single-deck .home-extra-row{display:none!important}
+#nov-deck-controls{display:flex;justify-content:center;align-items:center;gap:24px;padding:12px;color:#6887a0;font-size:13px}#nov-deck-controls button{border:1px solid #d9eaf2;border-radius:50%;background:#f8f9f6;width:36px;height:36px;color:#304653;font-size:24px}#nov-deck-controls button:disabled{opacity:.3}
+#discovery .home-grid-scroll{overflow-y:auto!important}.common-question-note{font-size:13px;color:#6887a0;line-height:1.6}.fact-art{width:18px;height:18px;fill:none;stroke:#6887a0;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin-right:7px;vertical-align:middle}.profile-fact small{display:flex;align-items:center}#match-job{margin:12px 0 4px;font-size:15px;font-weight:600;color:#304653}
+#my-feature-menu{display:flex;flex-direction:column;gap:24px}#my-feature-menu>*{margin-top:0!important;margin-bottom:0!important}#my-story-section{width:100%}.home-nav{justify-content:space-around!important}.comm-tools{display:flex;flex-wrap:wrap;gap:8px}.comm-question,.comm-privacy{display:none!important}.comm-entry{padding:20px 0}.comm-entry-meta{align-items:center}.comm-entry p{font-size:15px;line-height:1.8;word-break:keep-all;overflow-wrap:anywhere}.fx-cert-badge{max-width:100%;font-size:12px}.nov-open-copy .person-cert{flex-shrink:0}
+#discovery #daily-grid.nov-single-deck .match-sheet-thumb{min-height:100%!important;max-height:none!important;flex:none!important;grid-area:auto!important}
+#discovery #daily-grid.nov-single-deck .fx-batch-image{height:100%!important;min-height:100%!important;max-height:none!important;background-size:cover!important}
+#discovery #daily-grid.nov-single-deck .nov-open-copy{background:linear-gradient(transparent,rgba(27,43,49,.88))!important;color:#fff!important;height:auto!important;min-height:0!important;max-height:none!important;display:block!important}
+#discovery #daily-grid.nov-single-deck .nov-open-copy strong,#discovery #daily-grid.nov-single-deck .nov-open-copy p,#discovery #daily-grid.nov-single-deck .nov-open-copy span{color:#fff!important}
+
+.fx-cert-badge.phone-cert{background:#e5f1ed;color:#456d62;border-color:#bdd8cf}
+/* Reference composition: one portrait, fixed opening geometry. */
+#discovery .home-head>img,#discovery #home-daily-count,#discovery .release-note,#discovery .home-heart-link{display:none!important}
+#discovery .home-tabs{position:absolute!important;top:30px!important;left:24px!important;right:24px!important;margin:0!important;padding:0!important;height:40px!important}
+#discovery #daily-tab{font:400 26px/40px 'Gowun Batang',serif!important;padding:0!important;border:0!important}
+#discovery .home-head{position:static!important;height:0!important;margin:0!important;padding:0!important}
+#discovery #home-wallet{position:absolute!important;right:24px!important;top:30px!important;border:0!important;background:transparent!important;padding:5px!important;min-width:0!important;height:32px!important;gap:6px!important;font-size:15px!important}
+#discovery #home-wallet svg{width:20px!important;height:20px!important}
+#nov-schedule{position:absolute;left:24px;top:78px;margin:0;color:#788e99;font-size:12px;line-height:20px}
+#nov-filter{position:absolute;right:24px;top:126px;width:34px;height:34px;border:0;background:transparent;color:#62675f;padding:6px;z-index:7}#nov-filter svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5}
+#discovery .home-grid-scroll{position:absolute!important;top:172px!important;bottom:72px!important;left:24px!important;right:24px!important;padding:0!important;overflow:hidden!important}
+#discovery #daily-grid.nov-single-deck{height:calc(100% - 66px)!important;min-height:0!important;margin:0!important}
+#discovery #daily-grid.nov-single-deck .daily-card{height:100%!important;min-height:0!important;max-height:none!important;border:0!important;border-radius:22px!important;padding:0!important}
+#discovery .daily-card .open-card-label,#discovery .daily-card .release-time{display:none!important}
+#discovery .card-scene-preview{background:none!important;padding:0!important;bottom:24px!important;left:20px!important;right:20px!important}
+#discovery .card-scene-preview small{font-size:12px!important;line-height:20px!important;gap:4px!important}
+#discovery .card-scene-preview p{font-size:14px!important;line-height:24px!important;margin-top:6px!important;height:48px!important;min-height:48px!important}
+#discovery #daily-grid.nov-single-deck .nov-open-copy{padding:64px 20px 24px!important}
+#discovery .nov-person-title{gap:6px;align-items:baseline}#discovery .nov-person-title strong{font:700 27px/1.3 SUIT,sans-serif!important}#discovery .nov-person-title>span{font-size:20px!important}
+#discovery .nov-open-copy .nov-location{font-size:13px!important;margin:6px 0!important}
+#discovery .nov-scene small{font-size:12px!important;line-height:20px}#discovery .nov-scene p{font-size:14px!important;line-height:24px!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin:6px 0 0!important}
+.nov-activity{position:absolute;top:16px;left:16px;z-index:3}.nov-activity .recent-activity{font-size:11px!important;padding:6px 9px!important;background:#f8f9f6ed!important;color:#304653!important}
+#nov-deck-controls{height:66px;box-sizing:border-box;padding:0;gap:32px;color:#52636d;font-size:23px;font-weight:400}#nov-deck-controls button{border:0;background:transparent;border-radius:0;width:44px;height:44px;font-size:27px}
+#discovery #fx-home-tools{display:none!important}#discovery #fx-home-tools.nov-menu-open{display:block!important;position:fixed!important;z-index:10;background:#f8f9f6;border:1px solid #d9eaf2;border-radius:16px;padding:16px!important;top:150px!important;left:24px!important;right:24px!important;box-shadow:0 8px 30px #30465320}
+#discovery .home-extra-row{display:none!important}#discovery .home-nav{height:72px!important;padding:8px 12px!important}#discovery .home-nav .nav-symbol{width:40px;height:40px;background:transparent!important}#discovery .home-nav button{flex:1;min-width:0}
+#discovery:before{content:'';position:absolute;left:0;right:0;top:0;height:175px;background:url('./discovery-coast.png') center/cover no-repeat;opacity:.18;mask-image:linear-gradient(transparent,#000 35%,transparent);pointer-events:none}
+#discovery #daily-grid.nov-single-deck .nov-open-copy .nov-scene p{font:500 14px/24px SUIT,sans-serif!important;white-space:normal!important;max-height:48px!important;height:48px!important;overflow:hidden!important;display:-webkit-box!important;-webkit-line-clamp:2!important;-webkit-box-orient:vertical!important;letter-spacing:0!important}
+#discovery #daily-grid.nov-single-deck .nov-open-copy .nov-location{font:400 13px/22px SUIT,sans-serif!important}
+#discovery #daily-grid.nov-single-deck .nov-open-copy .nov-scene small{font:400 12px/20px SUIT,sans-serif!important}
+
+#discovery .home-nav [data-go="heartbox"]{display:flex!important}
+
+#discovery .locked-overlay:has(.open-card-label){visibility:hidden!important}
+
+/* Coworker flow alignment: terminal offer, shared navigation and settings */
+.nov-more-card{flex:0 0 100%;scroll-snap-align:start;box-sizing:border-box;height:100%;border:1px solid #d9e5e9;border-radius:22px;background:linear-gradient(#e8f3f7,#f8f9f6);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px 20px;gap:16px}.nov-more-card svg{width:120px;height:100px;fill:none;stroke:#89a6b3;stroke-width:1.5}.nov-more-card h2{font-size:25px;line-height:1.5;margin:0}.nov-more-card p{font-size:14px;line-height:1.7;margin:0}.nov-more-card button{width:100%;margin-top:12px}
+.home-nav [data-go="heartbox"]{display:flex!important}.home-nav{gap:0!important}.home-nav>button{flex:1!important;min-width:0!important}
+.po-community-tabs{display:flex;align-items:center;border-bottom:1px solid #d9e5e9;margin:20px 0 0;gap:20px}.po-community-tabs button{border:0;background:transparent;color:#788e98;padding:12px 0;font-size:14px}.po-community-tabs button[aria-pressed="true"]{color:#304653;border-bottom:2px solid #6887a0;font-weight:700}.po-community-tabs button:last-child{margin-left:auto;font-size:12px}.po-compose{position:sticky;bottom:12px;display:block;margin:12px 0 12px auto;border:0;border-radius:24px;padding:12px 18px;background:#304653;color:white;font:600 14px SUIT,sans-serif;box-shadow:0 4px 14px #30465320}.po-price{font-size:24px;font-weight:600}.po-contact-label{display:grid;gap:12px}.po-contact-label input{box-sizing:border-box;width:100%;padding:16px;border:1px solid #bdd1dc;border-radius:14px;font-size:16px;background:white}.person-cert svg{width:20px!important;height:20px!important;fill:#6887a0!important;stroke:#fff!important;stroke-width:1.8!important}.person-cert svg circle{stroke:#6887a0!important}.nov-person-title .person-cert{display:inline-flex;align-self:center}
+
+#mypage #my-page-meta[hidden],#mypage #my-page-tags[hidden]{display:none!important}
+
+/* Onboarding: PO content, Design 1 typography and palette. */
+#photos .photo-slot{position:relative;overflow:hidden;border-radius:16px;aspect-ratio:3/4}
+#photos .photo-slot img{width:100%;height:100%;object-fit:cover}
+.po-photo-menu{position:absolute;right:6px;top:6px;width:30px;height:30px;border:0;border-radius:50%;background:#F8F9F6;color:#304653;font-size:20px;z-index:2}
+.po-cover{position:absolute;left:6px;bottom:6px;padding:3px 8px;border-radius:9px;background:#F8F9F6;color:#304653;font-size:12px}
+.po-photo-dialog{width:min(300px,85vw);padding:24px;border:1px solid #D9EAF2;border-radius:24px;background:#F8F9F6;color:#304653}.po-photo-dialog::backdrop{background:#30465366}.po-photo-dialog button{display:block;width:100%;min-height:46px;margin-top:8px;border:1px solid #D9EAF2;border-radius:12px;background:white;color:#304653}.po-photo-dialog button:disabled{opacity:.35}
+.po-story-common{display:block;width:100%;text-align:left;padding:20px;margin:16px 0;border:1px solid #D9EAF2;border-radius:20px;background:#fff;color:#304653;box-sizing:border-box}.po-story-common small{display:block;color:#6887A0;margin-bottom:10px}.po-story-common strong{font-size:17px;line-height:1.6}.po-story-common p{font-size:15px;line-height:1.8;margin:12px 0;word-break:keep-all;overflow-wrap:anywhere}.po-story-common span{font-size:13px;color:#6887A0}
+#submission:not([hidden]){display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px;background:linear-gradient(#EAF4F7,#F8F9F6 75%)}#submission img{width:145px;margin-bottom:60px}#submission h1{font-size:26px;line-height:1.6;margin-top:24px}#submission p{font-size:14px;line-height:1.8;color:#617782}#submission small{font-size:12px;color:#788E98}.po-review-dots{display:flex;gap:8px}.po-review-dots i{width:7px;height:7px;border-radius:50%;background:#9DBFD3;animation:po-breathe 1.2s ease-in-out infinite}.po-review-dots i:nth-child(2){animation-delay:.15s}.po-review-dots i:nth-child(3){animation-delay:.3s}@keyframes po-breathe{50%{opacity:.3;transform:translateY(-4px)}}@media(prefers-reduced-motion:reduce){.po-review-dots i{animation:none}}
+/* Keep the home caption readable and aligned in both card states. */
+#discovery .nov-activity .recent-activity{font-size:12px!important;line-height:18px!important}
+#discovery .nov-person-title{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px!important}
+#discovery .nov-open-copy{padding:20px!important;box-sizing:border-box;word-break:keep-all;overflow-wrap:anywhere}
+#discovery .nov-location{display:block!important}
+#discovery .nov-scene{margin-top:12px!important}
+#story .po-story-common small{font-size:12px}
+
+/* Revision 116: independent verification, compact account navigation. */
+.person-cert{display:inline-flex!important;align-items:center;justify-content:center;flex:0 0 22px;width:22px!important;height:22px!important;vertical-align:middle;cursor:pointer}
+.person-cert svg{width:22px;height:22px;stroke:currentColor;stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.person-cert.cert-sun{color:#ad945c;background:transparent!important}.person-cert.cert-basic{color:#6887a0}.cert-basic svg circle{fill:#6887a0;stroke:none}.cert-basic svg path{stroke:white;stroke-width:2}
+#discovery .nov-person-title{display:flex;align-items:center;flex-wrap:wrap;gap:7px}#discovery .nov-person-title .person-cert{font-size:14px!important}.location-sketch{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.nov-location{display:flex;align-items:center;gap:6px}
+#heart-list .card-name-line{display:flex;align-items:center;flex-wrap:wrap;gap:5px}#heart-list .person-age{font-size:12px;font-weight:400}.card-name-line .recent-activity{order:5}
+#discovery .card-reveal-cover{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;z-index:8!important;transform-origin:left center;backface-visibility:hidden;pointer-events:none}
+#mypage .fx-my-group{border:0;box-shadow:none;background:transparent;margin:0;padding:0}#mypage .fx-my-item{min-height:52px;padding:12px 0}#mypage .my-summary{margin-bottom:16px}#mypage .my-section-title{display:none}
+.visual-profile-edit{padding:0 0 24px}.edit-hero{display:block;position:relative;width:100%;padding:0;border:0;background:none;border-radius:16px;overflow:hidden}.edit-hero img{display:block;width:100%;aspect-ratio:1/1.05;object-fit:cover}.edit-hero>span{position:absolute;right:12px;bottom:12px;background:#f8f9f6ed;color:#304653;padding:8px 12px;border-radius:22px;font-size:12px}.edit-thumbnails{display:flex;gap:8px;overflow:auto;margin:12px 0 22px}.edit-thumbnails button{flex:0 0 60px;height:70px;padding:0;background:#e8eff1;border:0;border-radius:8px;overflow:hidden;color:#6887a0;font-size:26px}.edit-thumbnails img{width:100%;height:100%;object-fit:cover}.edit-name{display:flex;align-items:center;gap:12px;border:0;background:none;padding:0;margin:16px 0;color:#304653;font:24px 'Gowun Batang',serif}.edit-name small{font:12px SUIT,sans-serif;color:#6887a0}
+
+.person-cert.cert-sun svg{fill:none!important;stroke:#ad945c!important;stroke-width:1.5!important}.person-cert.cert-sun svg circle{fill:none!important;stroke:#ad945c!important}.nov-person-title .cert-sun svg{stroke:#fff2c9!important}.nov-person-title .cert-sun svg circle{stroke:#fff2c9!important}
+#discovery .nov-open-copy .nov-location{display:flex!important;align-items:center;gap:6px}
+#mypage #my-feature-menu{margin-top:18px}#mypage #my-feature-menu .my-group{margin:0}#mypage #my-feature-menu .my-group>h2{display:none}#mypage #my-feature-menu .my-group-panel{border:0;border-radius:0;background:transparent;padding:0}#mypage #my-feature-menu .my-setting{min-height:49px;padding:8px 4px;gap:12px}#mypage #my-feature-menu .my-setting-icon{width:30px;height:30px}#mypage #my-feature-menu .my-setting-copy b{font-size:14px}#mypage #my-feature-menu .my-setting-copy small{font-size:12px}#mypage .my-actions{margin-bottom:0}
+
+/* v117: shared navigation and readable detail layouts */
+.screen.has-app-nav .ob-top{height:44px;display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+.screen.has-app-nav .ob-top>button:first-child{width:44px;height:44px;min-width:44px;padding:0;display:grid;place-items:center;font-size:0!important;background:transparent;border:0;color:#304653;position:relative}
+.screen.has-app-nav .ob-top>button:first-child::before{content:"";display:block;width:10px;height:10px;border-left:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg)}
+.screen.has-app-nav .ob-top>button:first-child svg{display:none}
+.screen.has-app-nav .detail-scroll{overflow-x:hidden;min-width:0}
+#chats .chat-list-row{min-width:0;max-width:100%;gap:12px}
+#chats .chat-list-copy{min-width:0;overflow:hidden}
+#chats .chat-list-copy p,#chats .chat-list-copy>span{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#chats .chat-list-row>*{min-width:0}
+#chats .chat-list-avatar{flex:0 0 44px;width:44px;height:44px}
+#features #fx-body>h1{margin-top:0;font-size:26px;line-height:1.45;word-break:keep-all;overflow-wrap:anywhere}
+#features #fx-body>p{word-break:keep-all;overflow-wrap:anywhere}
+.extra-summary{display:grid;grid-template-columns:1fr auto;gap:20px;padding:24px;margin:24px 0;background:#e9f3f7;border-radius:20px;font-size:15px;color:#617782}
+.extra-summary strong{color:#304653;font-size:18px;text-align:right}
+.extra-actions{display:grid;gap:12px;margin-top:28px}
+#fx-body .extra-actions button{width:100%;min-height:48px;margin:0;border-radius:16px}
+#fx-body .extra-actions .fx-small{background:transparent;color:#617782}
+#story .q-status{font-size:13px;line-height:1.7;margin:16px 0}
+
+/* v118: compact discovery, contained settings and personal letters */
+#discovery #nov-schedule{top:76px;right:66px;margin:0;font-size:12px;line-height:20px}
+#discovery #nov-filter{top:66px;right:24px;width:44px;height:44px;padding:11px;border:1px solid #d5e3e9;border-radius:50%;background:#f8fbfc;color:#6887a0;display:grid;place-items:center}
+#nov-filter svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round}
+#discovery .home-grid-scroll{top:124px!important}
+#discovery #fx-home-tools.nov-menu-open{position:absolute!important;top:116px!important;left:24px!important;right:24px!important;width:auto!important;max-width:none!important;z-index:30;padding:8px!important;border-radius:20px;background:#f8f9f6;box-shadow:0 12px 32px #30465326}
+#discovery #fx-home-tools .home-recommendations{display:flex!important;flex-direction:column!important;width:100%!important;gap:0!important;padding:0!important;border:0!important}
+#discovery #fx-home-tools .home-recommendations>button{display:grid!important;grid-template-columns:28px minmax(0,1fr) 16px;gap:12px!important;align-items:center;text-align:left!important;width:100%!important;min-height:76px;padding:14px!important;background:transparent!important;border:0!important;border-radius:12px!important;position:static!important}
+#discovery #fx-home-tools .home-recommendations>button+button{border-top:1px solid #dce7eb!important}
+#discovery #fx-home-tools button::after{display:none!important}
+#discovery #fx-home-tools b{font:600 15px/1.5 SUIT,sans-serif;display:block;color:#304653}
+#discovery #fx-home-tools small{font:400 12px/1.6 SUIT,sans-serif;display:block;margin-top:3px;color:#617782;white-space:normal}
+#discovery #fx-home-tools .menu-symbol{font-size:24px;color:#6887a0}
+#discovery .nov-location svg{width:16px;height:16px;flex:0 0 16px;fill:none;stroke:currentColor;stroke-width:1.5}
+.letter-recipient{display:flex;align-items:center;gap:12px;margin:8px 0 22px;font-size:15px;color:#617782}
+.letter-recipient img{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:none}
+#fx-body .letter-paper{padding:24px 20px;border:1px solid #dce7eb;border-radius:4px 20px 4px 4px;background:#fdfdf9;box-shadow:0 5px 18px #30465305;margin:0 0 18px}
+.letter-to{font:15px/1.8 'Gowun Batang',serif;color:#6887a0}
+#fx-body .letter-paper p{font:16px/2 'Gowun Batang',serif;color:#304653;white-space:pre-wrap;word-break:keep-all;overflow-wrap:anywhere;margin:16px 0 32px;min-height:128px;background:repeating-linear-gradient(transparent 0,transparent 31px,#dce7eb 31px,#dce7eb 32px)}
+.letter-paper footer{display:grid;gap:6px;text-align:right;color:#7994a3;font:12px/1.6 SUIT,sans-serif}
+#fx-body .letter-state{font:13px/1.8 SUIT,sans-serif;text-align:center;color:#617782;margin:20px 0}
+#fx-body:has(.letter-paper)>.fx-contact{padding:14px 16px;font-size:13px;line-height:1.8;border:0;background:#eaf2f5;border-radius:14px}
+#fx-body:has(.letter-paper)>.fx-small{margin:8px 8px 12px 0;min-height:44px;font-size:13px}
+#fx-body:has(.letter-paper)>small{display:block;font-size:12px;line-height:1.8;color:#78909b;margin-top:12px}
+#photos .photo-grid{gap:10px}
+#photos .photo-slot{border-radius:14px;overflow:hidden;border-color:#bed3df}
+#photos .po-photo-menu{width:30px;height:30px;right:7px;bottom:7px;border-radius:10px;background:#f8f9f6ed;color:#304653;display:grid;place-items:center;padding:0}
+#photos .po-cover{top:7px;left:7px;background:#f8f9f6ed;color:#304653;padding:3px 7px;border-radius:6px;font:600 11px/1.5 SUIT,sans-serif}
+@media(max-width:370px){#discovery #nov-schedule{font-size:11px}#discovery .home-grid-scroll{left:18px;right:18px}#discovery #fx-home-tools.nov-menu-open{left:18px!important;right:18px!important}}
+
+/* Recommendation menu follows the app viewport, not the scroll contents. */
+#discovery #fx-home-tools.nov-menu-open{height:auto!important;min-height:0!important;margin:0!important}
+#discovery #fx-home-tools .home-recommendations{height:auto!important;min-height:0!important;margin:0!important}
+#discovery #fx-home-tools .home-recommendations>button{flex:none!important;height:auto!important;background-image:none!important}
+#discovery #fx-home-tools .home-recommendations small{display:block;background:none!important;padding:0!important;font-size:12px!important;line-height:1.5!important;white-space:normal}
+
+#photos .photo-slot .po-cover{top:auto!important;bottom:7px;left:7px;right:auto;height:auto!important;width:auto!important;min-height:0;display:inline-flex}
+
+/* v119: keep the balance hit area clear of the title and compact preference control. */
+#discovery .home-tabs{right:110px!important}
+#discovery #home-wallet{z-index:8;min-height:44px;cursor:pointer}
+#discovery #nov-filter{width:36px;height:36px;padding:8px;top:80px}
+#discovery #nov-filter svg{width:18px;height:18px}
+#discovery #nov-filter::before{content:"";position:absolute;inset:-4px;border-radius:50%}
