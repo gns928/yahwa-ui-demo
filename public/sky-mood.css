@@ -1,0 +1,23 @@
+/* Discovery-only visual layer: no application state or interaction changes. */
+#discovery{background:radial-gradient(ellipse 65% 12% at 15% 19%,#ffffffd9,transparent),radial-gradient(ellipse 65% 10% at 88% 25%,#ffffffd9,transparent),linear-gradient(180deg,#D9EAF2 0%,#EDF5F7 36%,#F8F9F6 75%)}
+#discovery .home-head{position:relative}
+#discovery .home-tabs #daily-tab{font-family:'Gowun Batang',serif;font-size:25px;font-weight:400;letter-spacing:-.7px}
+#discovery .home-tabs{position:relative}
+#discovery .home-tabs::before{content:'';position:absolute;width:64px;height:36px;right:8px;top:-36px;background:url('/sky-sketch.svg') center/contain no-repeat;pointer-events:none;opacity:.8}
+#discovery .release-note{border-bottom:1px solid #9DBFD360;padding-bottom:14px}
+#discovery #fx-home-tools{gap:8px;margin-bottom:20px}
+#discovery #fx-home-tools button{background:#ffffff85;border:1px solid #ffffffd9;border-radius:18px;box-shadow:0 2px 6px #6887A008;font-size:12px;min-height:40px}
+#discovery .daily-grid{gap:18px 12px;padding:2px 2px 12px}
+#discovery .daily-card{background:#FFFEFA;border:6px solid #FFFEFA;border-bottom-width:10px;border-radius:5px;box-shadow:0 3px 10px #30465312;overflow:hidden}
+#discovery .match-sheet-thumb{border-radius:2px!important}
+#discovery .locked-overlay{background:linear-gradient(180deg,#30465318,#30465342);}
+#discovery .locked-overlay strong{font:400 18px/1.6 'Gowun Batang',serif;letter-spacing:0;padding:0 8px;text-align:center}
+#discovery .locked-overlay .ready-time{font-size:12px;top:14px;letter-spacing:1px}
+#discovery .daily-card:not(.is-locked) .daily-copy{position:relative;padding:12px 6px 3px;color:#304653;background:#FFFEFA}
+#discovery .daily-card:not(.is-locked) .daily-copy::before{display:none}
+#discovery .daily-card:not(.is-locked) .daily-copy strong{color:#304653;text-shadow:none;font:400 19px/1.4 'Gowun Batang',serif}
+#discovery .daily-card:not(.is-locked) .daily-copy p{color:#617782;font-size:12px;margin:4px 0}
+#discovery .daily-card:not(.is-locked) .daily-copy>span{color:#6887A0;font:12px/1.6 SUIT,sans-serif}
+#discovery .home-nav{background:#F8F9F6f5;border-top-color:#D9EAF2}
+
+#discovery .daily-card{align-self:start}
